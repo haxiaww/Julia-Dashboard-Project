@@ -38,3 +38,27 @@ The visualizations include trend analysis, sales comparisons by store and produc
 │   ├── figures/           # Folder to store generated plots and graphs
 ├── README.md              # Project description and documentation
 └── Project.toml           # Julia dependencies and environment file
+```
+## Data Overview
+
+The dataset consists of sales transactions from stores across Ecuador. The columns include:
+
+- `date`: The date of the transaction.
+- `store_number`: Identifier for each store.
+- `product`: Product category or item being sold.
+- `sales`: Number of units sold.
+- `state`: The state in Ecuador where the store is located.
+- `holiday`: Whether the transaction took place on a holiday.
+
+The holidays dataset provides additional context by listing significant holidays in Ecuador, which can affect sales patterns.
+
+## Key Insights and Visualizations
+
+- **Sales Trends**: Visualize the time series of sales data to observe trends, such as peak sales periods and seasonal patterns.
+
+- **Store-wise Comparison**: Compare the sales performance of different stores using bar charts, identifying the top-performing stores.
+
+- **Impact of Holidays**: Analyze the effect of holidays on sales by comparing sales during holidays with non-holiday periods.
+
+- **Geographical Insights**: Map sales data across states to visualize regional performance.
+
