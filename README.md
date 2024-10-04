@@ -27,13 +27,14 @@ The visualizations include trend analysis, sales comparisons by store and produc
 ## Project Structure
 ```bash
 ├── data/
-│   ├── train.csv           # Sales data for training
-│   ├── holidays.csv        # Holidays data
-│   └── stores.csv          # Store information
+│   ├── holiday_events.csv        # Holidays data
+│   ├── oil.csv                   # Oil data
+│   ├── stores.csv                # Store information
+│   ├── test.csv                  # Test data
+│   ├── train.csv                 # Train data
+│   └── transactions.csv          # Transaction         
 ├── src/
-│   ├── data_preprocessing.jl    # Data cleaning and feature engineering
-│   ├── visualizations.jl        # Code for generating visualizations
-│   └── dashboard.jl             # Dash dashboard code
+│   └── app.jl             # Dash dashboard code
 ├── output/
 │   ├── figures/           # Folder to store generated plots and graphs
 ├── README.md              # Project description and documentation
@@ -43,12 +44,33 @@ The visualizations include trend analysis, sales comparisons by store and produc
 
 The dataset consists of sales transactions from stores across Ecuador. The columns include:
 
-- `date`: The date of the transaction.
-- `store_number`: Identifier for each store.
-- `product`: Product category or item being sold.
-- `sales`: Number of units sold.
-- `state`: The state in Ecuador where the store is located.
-- `holiday`: Whether the transaction took place on a holiday.
+## Data Overview
+
+The dataset consists of sales transactions from stores across Ecuador. The columns include:
+
+- **id**: Unique identifier for each transaction.
+- **date**: The date of the transaction.
+- **store_nbr**: Identifier for each store.
+- **family**: Product category or item being sold.
+- **sales**: Number of units sold.
+- **onpromotion**: Indicates if the product was on promotion.
+- **holiday_type**: Type of holiday during the transaction.
+- **locale**: Locale type of the store (e.g., urban, rural).
+- **locale_name**: Name of the locale.
+- **description**: Description of the product.
+- **transferred**: Indicates if the product was transferred from another store.
+- **dcoilwtico**: Oil prices (West Texas Intermediate) that may affect sales.
+- **city**: The city in Ecuador where the store is located.
+- **state**: The state in Ecuador where the store is located.
+- **store_type**: Type of store (e.g., supermarket, convenience store).
+- **cluster**: Cluster information for the store.
+- **transactions**: Total number of transactions for the store.
+- **year**: The year of the transaction.
+- **month**: The month of the transaction.
+- **week**: The week of the transaction.
+- **quarter**: The quarter of the transaction.
+- **day_of_week**: Day of the week for the transaction.
+
 
 The holidays dataset provides additional context by listing significant holidays in Ecuador, which can affect sales patterns.
 
