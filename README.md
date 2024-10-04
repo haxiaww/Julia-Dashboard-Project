@@ -40,9 +40,6 @@ The visualizations include trend analysis, sales comparisons by store and produc
 ├── README.md              # Project description and documentation
 └── Project.toml           # Julia dependencies and environment file
 ```
-## Data Overview
-
-The dataset consists of sales transactions from stores across Ecuador. The columns include:
 
 ## Data Overview
 
