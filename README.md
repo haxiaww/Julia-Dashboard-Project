@@ -1,5 +1,6 @@
 # Sales Data Visualization in Julia
-
+![Sales Trends](output/Dashboard.png)
+![Top 10 Products](output/Dropdown.png)
 ## Project Overview
 This project demonstrates how to efficiently perform data cleaning, feature engineering, and interactive visualizations using Julia for a real-world sales dataset. The dataset used comprises sales data from various stores across Ecuador. The project showcases data processing, visualization, and exploration techniques, and it is built with `CSV.jl`, `DataFrames.jl`, `PlotlyJS.jl`, and `Dash.jl` for the frontend interactive dashboard.
 
